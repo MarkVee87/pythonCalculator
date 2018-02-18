@@ -32,6 +32,7 @@ else:
     a = int(raw_input("a: "))
     b = int(raw_input("b: "))
     c = int(raw_input("c: "))
+
 quadraticCoordinates = quadCalc(a, b, c)
-# 1,2,3 = x1 = (-1+1.41421356237j) and x2 = (-1-1.41421356237j)
+
 print('x1 = {0} and x2 = {1}'.format(quadraticCoordinates[0], quadraticCoordinates[1]))
