@@ -1,3 +1,5 @@
 # pythonCalculator
 
-Basic application to help me learn Python
+Python calculator for:
+* basic mathematics
+* quadratic equations
