@@ -34,7 +34,7 @@ def find_vx(a, b):
 
 
 def find_vy(a, b, c):
-    ass = -b / (2 * a)
-    vy = a * ass * ass + b * ass + c
+    d = -b / (2 * a)
+    vy = a * d * d + b * d + c
     print("vy(k) value is", vy)
     return vy
