@@ -16,7 +16,9 @@ quadraticCoordinates = quadratic_calculator()
 
 x1 = quadraticCoordinates[0]
 x2 = quadraticCoordinates[1]
+vx = quadraticCoordinates[2]
+vy = quadraticCoordinates[3]
 
 print('x1 = {0} and x2 = {1}'.format(x1, x2))
 
-quadratic_graph(x1, x2)
+quadratic_graph(x1, x2, vx, vy)
