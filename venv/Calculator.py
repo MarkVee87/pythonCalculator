@@ -1,7 +1,7 @@
 from MathsTools import *
 from sys import version_info
 
-py3 = version_info[0] > 2 #creates boolean value for test that Python major version > 2
+py3 = version_info[0] > 2
 
 if py3:
     num1 = int(input("num1: "))
