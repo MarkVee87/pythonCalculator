@@ -1,19 +1,26 @@
 from MathsTools import *
+from sys import version_info
 
-num1 = 78
-num2 = 4
+py3 = version_info[0] > 2 #creates boolean value for test that Python major version > 2
 
-total = multiply(num1, num2)
-print("Multiplying two numbers", total)
+if py3:
+    num1 = int(input("num1: "))
+    num2 = int(input("num2: "))
+else:
+    num1 = int(raw_input("num1: "))
+    num2 = int(raw_input("num2: "))
 
-total = add(num1, num2)
-print("Adding two numbers", total)
+print("Multiplying two numbers", multiply(num1, num2))
 
-total = subtract(num1, num2)
-print("Subtracting one number from another", total)
+print("Adding two numbers", add(num1, num2))
 
-total = divide(num1, num2)
-print("Dividing one number by another", total)
+print("Subtracting one number from another", subtract(num1, num2))
 
-total = raiseToPowerOf(2, 3)
-print("Raising a number to a power", total)
+print("Dividing one number by another", divide(num1, num2))
+
+print("Raising a number to a power", raiseToPowerOf(num1, num2))
+
+listOfNumbers = [1,2,3,4,5]
+
+print("Multiplying two numbers (using value from list)", multiply(listOfNumbers[2], num2))
+
