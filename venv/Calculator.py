@@ -1,7 +1,8 @@
+from MathsTools import totalMult
 
-num1 = 3
+num1 = 78
 num2 = 4
 
-total = num1 * num2
+total = totalMult(num1, num2)
 
 print(total)
